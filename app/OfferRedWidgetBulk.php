@@ -1,9 +1,15 @@
 <?php
 namespace App;
 
-
 use Money\Money;
 
+/**
+ * OfferRedWidgetBulk
+ *
+ * When more than one red widget (R01) is bought, half of them will be charged at half price
+ *
+ * @package App
+ */
 class OfferRedWidgetBulk implements Offer
 {
     private $details = 'Buy one red widget, get the second half price';

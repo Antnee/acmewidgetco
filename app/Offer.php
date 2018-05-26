@@ -1,9 +1,13 @@
 <?php
 namespace App;
 
-
 use Money\Money;
 
+/**
+ * Interface Offer
+ *
+ * @package App
+ */
 interface Offer
 {
     /**

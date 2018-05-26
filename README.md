@@ -11,8 +11,8 @@ delivery rules (`DeliveryRuleClient`) and an `Offer`.
 For the `Widget` support, you will find the `Widget` object itself, the
 `WidgetCatalog.json` file which holds a file-system based catalog, a
 `WidgetCollection` for handling more than one `Widget`, the `WidgetFsProvider`
-which fetches this raw data and returns a simple `array`, the `WidgetProvider`
-interface (which is implemented by `WidgetFsProvider`) and the
+which fetches this raw data and returns a collection of `StdClass` objects, the
+`WidgetProvider` interface (which is implemented by `WidgetFsProvider`) and the
 `WidgetRepository` which would provide full CRUD methods, and is passed into
 the basket as described above.
 

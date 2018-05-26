@@ -3,6 +3,13 @@ namespace App;
 
 use Money\Money;
 
+/**
+ * DeliveryRuleClient
+ *
+ * Contains delivery rules
+ *
+ * @package App
+ */
 class DeliveryRuleClient
 {
     private $rules;

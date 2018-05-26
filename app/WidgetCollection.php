@@ -17,6 +17,11 @@ class WidgetCollection extends Collection
         }
     }
 
+    /**
+     * Append Widget to Collection
+     *
+     * @param mixed $widget
+     */
     public function append($widget)
     {
         if (!$widget instanceof Widget) {
@@ -29,6 +34,12 @@ class WidgetCollection extends Collection
         $this->offsetSet($widget->code(), $widget);
     }
 
+    /**
+     * Add Widget to Specific Offset in Collection
+     *
+     * @param mixed $sku
+     * @param mixed $widget
+     */
     public function offsetSet($sku, $widget)
     {
         if (!$widget instanceof Widget) {
