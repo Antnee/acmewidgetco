@@ -49,7 +49,7 @@ Tests are included in `./tests`. I am running these locally with the following
 command:
 
 ```sh
-$ ./vendor/bin/phpunit --testsuite all
+$ ./vendor/bin/phpunit
 ```
 
 ### Coverage Reports
@@ -68,6 +68,8 @@ particular category:
 * `_integration`: These tests use absolutely zero mocks and will test the
     entire application as a whole. This includes the example baskets provided
     with the challenge
+* `all`: Runs all testsuites. This is the default, so if you don't enter a
+    testsuite then this will run anyway
 * `basket`: Will run the tests on the `Basket`, `BasketItem` and
     `BasketCollection` classes
 * `deliveryRules`: Runs the tests against the `DeliveryRule` and `DeliveryRules`
