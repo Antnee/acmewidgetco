@@ -6,7 +6,7 @@ This is some example code that I've been asked to write as a small challenge.
 The code supports a basket for ordering _widgets_ from the _Acme Widget Co_.
 
 The basket is instantiated with the product catalog (`WidgetRepository`), the
-delivery rules (`DeliveryRuleClient`) and offers (`OfferRepository`).
+delivery rules (`DeliveryRuleClient`) and an `Offer`.
 
 For the `Widget` support, you will find the `Widget` object itself, the
 `WidgetCatalog.json` file which holds a file-system based catalog, a
@@ -23,9 +23,9 @@ support widget weight etc). The basket price is checked and depending on the
 rule (ie whether a price range was set, less-than, greater-than, exact-price
 etc) then the configured price will be returned.
 
-Discounts are supported via the `OffersRepository`. The example given in the
+Discounts are supported via the `Offer` interface. The example given in the
 challenge is where the customer buys one ref widget and gets the second for
-half price.
+half price. This is included in the `OfferRedWidgetBulk` class;
 
 ## Third party code in use
 The collections are an extension of my own
