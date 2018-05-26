@@ -43,15 +43,6 @@ class IntegrationTest extends TestCase
         foreach ($skus as $sku) {
             $this->basket = $this->basket->add($sku);
         }
-//        printf(
-//            "\nSKUs:     %s\nTotal:    %s\nBasket:   %s\nItems:    %s\nDiscount: %s\nDelivery: %s\n",
-//            implode(", ", $skus),
-//            $total->getAmount(),
-//            $this->basket->basketPrice()->getAmount(),
-//            $this->basket->basketItemsPrice()->getAmount(),
-//            $this->basket->discountValue()->getAmount(),
-//            $this->basket->deliveryPrice()->getAmount()
-//        );
         $this->assertTrue($this->basket->basketPrice()->equals($total));
     }
 

@@ -24,12 +24,6 @@ class DeliveryRulesTest extends TestCase
         parent::setUp();
         $this->basket = $this->createMock(Basket::class);
         $this->basket->method('discountValue')->willReturn(Money::USD(0));
-
-        $freeOverTenDollars = When::basketPriceGreaterThan(Money::USD(1000), Money::USD(0))
-            ->then(When::basketPriceAnything(Money::USD(500)));
-        $defaultPricing = When::basketPriceLessThan(Money::USD(5000), Money::USD(495))
-            ->then(When::basketPriceLessThan(Money::USD(9000), Money::USD(295)))
-            ->then(When::basketPriceAnything(Money::USD(0)));
     }
 
     /**

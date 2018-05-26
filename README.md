@@ -24,7 +24,7 @@ rule (ie whether a price range was set, less-than, greater-than, exact-price
 etc) then the configured price will be returned.
 
 Discounts are supported via the `Offer` interface. The example given in the
-challenge is where the customer buys one ref widget and gets the second for
+challenge is where the customer buys one red widget and gets the second for
 half price. This is included in the `OfferRedWidgetBulk` class;
 
 ## Third party code in use
