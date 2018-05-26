@@ -1,0 +1,42 @@
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         defaultTestSuite="default"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="true"
+>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <const name="WIDGET_CATALOG_JSON" value="./app/WidgetCatalog.json"/>
+    </php>
+    <testsuites>
+        <!-- Test everything -->
+        <testsuite name="all">
+            <directory>tests</directory>
+        </testsuite>
+
+        <testsuite name="_integration">
+            <directory>tests/_integration</directory>
+        </testsuite>
+
+        <testsuite name="basket">
+            <directory>tests/basket</directory>
+        </testsuite>
+        <testsuite name="deliveryRules">
+            <directory>tests/deliveryRules</directory>
+        </testsuite>
+        <testsuite name="offers">
+            <directory>tests/offers</directory>
+        </testsuite>
+        <testsuite name="widgets">
+            <directory>tests/widget</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
