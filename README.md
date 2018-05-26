@@ -1,4 +1,4 @@
-# Acme Widget Co
+# Acme Widget Co [![Build Status](https://travis-ci.org/Antnee/acmewidgetco.svg?branch=master)](https://travis-ci.org/Antnee/acmewidgetco)
 
 ## What is this?
 This is some example code that I've been asked to write as a small challenge.
